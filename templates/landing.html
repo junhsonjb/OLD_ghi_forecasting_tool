@@ -6,12 +6,12 @@
     <title>GHI | Forecasting Tool</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="landing-container">
         <header class="header">
-            <img src="static/img/logo.png" alt="Logo image" class="header__img">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo image" class="header__img">
         </header>
         <div class="hero">
             <div class="hero__text">

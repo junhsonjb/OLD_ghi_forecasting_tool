@@ -1,0 +1,29 @@
+%heading {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 5rem;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 3.25rem;
+
+    &--landing {
+        grid-column: center-start / center-end;
+        justify-self: center;
+    } 
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 2.75rem;
+}

@@ -1,3 +1,15 @@
+/*
+@mixin respond($breakpoint) {
+    @if $breakpoint == variable_name_here {
+        @media (max-width: 37.5em) {@content}; //600px
+    }
+}
+*/
+/*
+@include respond(variable_name_here) {
+    font-size: 50%;
+}
+*/
 *,
 *::before,
 *::after {
@@ -20,12 +32,6 @@ body {
 
 .heading-1 {
   font-size: 5rem; }
-  @media only screen and (max-width: 68.75em) {
-    .heading-1 {
-      font-size: 3.75rem; } }
-  @media only screen and (max-width: 50em) {
-    .heading-1 {
-      font-size: 3rem; } }
 
 .heading-2 {
   font-size: 4rem; }
@@ -63,23 +69,26 @@ body {
 .u-margin-top-huge {
   margin-top: 9rem !important; }
 
+.align-txt-center {
+  text-align: center !important; }
+
+.shadow-sm {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15) !important; }
+
 .header {
-  grid-row: header-start / header-end;
-  grid-column: full-start / full-end;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   display: flex; }
   .header__img {
     width: 4%;
     margin: 2px 0 2px 6rem; }
 
 .hero {
+  width: 100%;
+  height: 30vh;
   position: relative;
-  grid-row: hero-start / hero-end;
-  grid-column: full-start / full-end;
   overflow: hidden;
   background-image: linear-gradient(105deg, transparent 60%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0.6) 100%), url(../static/img/background1.jpg);
   background-size: 100%;
-  background-position: 0 15%; }
+  background-position: 0 35%; }
   .hero__text {
     height: 100%;
     width: 35%;
@@ -91,15 +100,10 @@ body {
     align-items: start;
     justify-content: center; }
 
-.landing-container {
-  display: grid;
-  grid-template-rows: [header-start] 8vh [header-end hero-start] 18vw [hero-end];
-  grid-template-columns: [full-start] 1fr [center-start] repeat(2, [col-start] minmax(min-content, 45rem) [col-end]) [center-end] 1fr [full-end]; }
-
 .landing-select {
-  grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: repeat(2, [col-end] minmax(min-content, 45rem) [col-end]); }
+  grid-template-columns: repeat(2, [col-end] minmax(min-content, 45rem) [col-end]);
+  justify-content: center; }
   .landing-select__section:link, .landing-select__section:visited {
     padding: 4rem 3rem;
     display: flex;
