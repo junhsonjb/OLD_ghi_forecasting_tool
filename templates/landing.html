@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHI | Forecasting Tool</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="landing-container">
+        <header class="header">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo image" class="header__img">
+        </header>
+        <div class="hero">
+            <div class="hero__text">
+                <h4 class="heading-4 u-margin-bottom-small">Global Health Impact</h4>
+                <h1 class="heading-1">Forecasting Tool</h1>
+            </div>
+        </div>
+        <h3 class="heading-3 heading-3--landing u-margin-top-medium">What would you like to forecast?</h3>
+        <div class="landing-select u-margin-top-small">
+            <a href="#" class="landing-select__section">
+                <svg class="landing-select__icon">
+                    <use xlink:href="static/sprites.svg#icon-globe"/>
+                </svg>
+                <span class="landing-select__text">Country</span>
+            </a>
+            <a href="#" class="landing-select__section">
+                <svg class="landing-select__icon">
+                    <use xlink:href="static/sprites.svg#icon-briefcase"/>
+                </svg>
+                <span class="landing-select__text">Company</span>
+            </a>
+            <a href="#" class="landing-select__section">
+                <svg class="landing-select__icon">
+                    <use xlink:href="static/sprites.svg#icon-line-graph"/>
+                </svg>
+                <span class="landing-select__text">Disease</span>
+            </a>
+            <a href="#" class="landing-select__section">
+                <svg class="landing-select__icon">
+                    <use xlink:href="static/sprites.svg#icon-pil"/>
+                </svg>
+                <span class="landing-select__text">Drug</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
