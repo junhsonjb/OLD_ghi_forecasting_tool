@@ -1,0 +1,34 @@
+.landing-select {
+    display: grid;
+    grid-template-columns: repeat(2, [col-end] minmax(min-content, 45rem)[col-end]);
+
+    justify-content: center;
+    
+    &__section:link,
+    &__section:visited {
+        padding: 4rem 3rem;
+        display: flex;
+        align-items: center;
+
+
+        text-decoration: none;
+
+        transition: all .2s;
+    }
+
+    &__section:hover {
+        box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+    }
+
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+        fill: royalblue;
+        margin: 0 4rem;
+    }
+
+    &__text {
+        font-size: 2rem;
+        color: black;
+    }
+}

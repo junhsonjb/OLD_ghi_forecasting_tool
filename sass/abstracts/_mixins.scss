@@ -1,0 +1,15 @@
+//Media query engine template
+//ORDER: Base + typography > general layout > page layout > components
+/*
+@mixin respond($breakpoint) {
+    @if $breakpoint == variable_name_here {
+        @media (max-width: 37.5em) {@content}; //600px
+    }
+}
+*/
+//Media query usage example
+/*
+@include respond(variable_name_here) {
+    font-size: 50%;
+}
+*/
